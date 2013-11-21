@@ -1,0 +1,162 @@
+<html>
+<head>
+  <title>Javascript Bare</title>
+
+</head>
+<body>
+
+<!-- <a href="http://google.com" id="google-link">Click me</a> -->
+
+<button id='my-button'>I'm a button</button>
+
+<!-- <label>Ow! (x<span id="poke-count">0</span>)</label>
+<input id="poke" type="submit" /> -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+	
+	// $("#google-link").on('click', function(e) {
+	// 	e.preventDefault();
+	// 	alert("No Google for you!");
+	// });
+
+// ---------- This is for the poke-count html ---------
+// var counter = 0
+
+// 	$('#poke').on('click', function() {
+// 		$('#poke-count').text(counter++);
+// 	});
+
+// ----------- 8. Butler function -----------
+
+// var serve = function (x) {
+// 	x();
+// };
+
+// var greet = function () {
+// 	alert('Hi');
+// }
+
+// serve('me');
+
+// ----------- 9. Double Up function -----------
+
+// var doubleUp = function (func) {
+// 	func(), func();
+// }
+
+// var punch = function () {
+// 	alert("POWA!");
+// };
+
+// var kick = function () {
+// 	alert("KIA!");
+// };
+
+// doubleUp(punch);  // This should alert twice
+// doubleUp(kick);   // This should alert twice
+
+// ----------- 10. serveTime function -----------
+
+// var now = new Date()
+
+// var serveTime = function (func) {
+// 	func(now);
+// };
+
+// var logTime = function (time) {
+// 	console.log('The current time is:', time);
+// };
+
+// var alertTime = function (time) {
+// 	alert('The current time is: ' + time);
+// };
+
+// // Before you get started, run this in your console to see how logTime works:
+// // // var now = new Date();
+// // logTime(now);
+// // alertTime(now);
+
+// serveTime(logTime);     // This should log the current time
+// serveTime(alertTime);   // This should alert the current time
+
+// ---------- 11. logdata/Display Data function Function --------
+
+// var logData = function (data) {
+// 	console.log(data);
+// }
+
+// var displayData = function (alertDataFunc, logDataFunc, data) {
+//   alertDataFunc(data);
+//   logDataFunc(data);
+// }
+
+// displayData(alert, logData, "IMPORTANT MESSAGE: I like your shirt.");
+
+// ------ 12. Partner Exercise #4 -----------
+
+// var yell = function (string) {
+// 	return(string.toUpperCase()+ "!");
+// };
+
+// var ask = function (string) {
+// 	return(" Can you please " + string + "?");
+// };
+
+// var serveMessage = function (string, anotherString, func) {
+// 	return(string + func(anotherString));
+// };
+
+// var ex1 = yell('what?');
+// console.log('Ex1 should be "WHAT?!":', ex1);
+
+// var ex2 = ask('open the door');
+// console.log('Ex2 should be "Can you please open the door?":', ex2);
+
+// var ex3 = serveMessage('Bob','call me', ask);
+// console.log('Ex3 should be "Bob: Can you please call me?":', ex3);
+
+// var ex4 = serveMessage('Bob','call me', yell);
+// console.log('Ex4 should be "Bob: CALL ME!":', ex4);
+
+// --------- 18. Partner Exercise #7 --------
+
+var ask = function (string) {
+	return(" Can you please " + string + "?");
+};
+
+$('serveMessage') = function (string, anotherString, func) {
+	return(string + func(anotherString));
+};
+
+serveMessage('Bob','call me', ask);
+console.log(serveMessage);
+
+// -------- 15. & 16. Functions as Callbacks ---------
+
+// Old:
+// var greet = function () { alert('hi'); };
+// setTimeout(greet, 2000);
+
+// New:
+// setTimeout(function () {
+//   alert('hi');
+// }, 2000);
+
+// setTimeout(function () {
+// 	alert('Stop alerting yourself');
+// 	}, 1000);
+
+// ---------- 17. Partner Exercise #6  ----------
+
+// $('#my-button').on('click', function() {
+// 	alert('ouch... *cough cough*');
+// });
+
+
+
+</script>
+
+</body>
+</html>
